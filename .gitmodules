@@ -1,0 +1,84 @@
+[submodule "Vundle.vim"]
+	path = Vundle.vim
+	url = ./bundle/Vundle.vim/
+[submodule "bufexplorer"]
+	path = bufexplorer
+	url = ./bundle/bufexplorer/
+[submodule "ctrlp-funky"]
+	path = ctrlp-funky
+	url = ./bundle/ctrlp-funky/
+[submodule "ctrlp-rails.vim"]
+	path = ctrlp-rails.vim
+	url = ./bundle/ctrlp-rails.vim/
+[submodule "ctrlp.vim"]
+	path = ctrlp.vim
+	url = ./bundle/ctrlp.vim/
+[submodule "nerdcommenter"]
+	path = nerdcommenter
+	url = ./bundle/nerdcommenter/
+[submodule "nerdtree"]
+	path = nerdtree
+	url = ./bundle/nerdtree
+[submodule "nerdtree-git-plugin"]
+	path = nerdtree-git-plugin
+	url = ./bundle/nerdtree-git-plugin/
+[submodule "splitjoin.vim"]
+	path = splitjoin.vim
+	url = ./bundle/splitjoin.vim/
+[submodule "syntastic"]
+	path = syntastic
+	url = ./bundle/syntastic/
+[submodule "tabular"]
+	path = tabular
+	url = ./bundle/tabular/
+[submodule "tagbar"]
+	path = tagbar
+	url = ./bundle/tagbar/
+[submodule "tmuxline.vim"]
+	path = tmuxline.vim
+	url = ./bundle/tmuxline.vim/
+[submodule "vim-airline"]
+	path = vim-airline
+	url = ./bundle/vim-airline/
+[submodule "vim-auto-save"]
+	path = vim-auto-save
+	url = ./bundle/vim-auto-save/
+[submodule "vim-bundler"]
+	path = vim-bundler
+	url = ./bundle/vim-bundler/
+[submodule "vim-dispatch"]
+	path = vim-dispatch
+	url = ./bundle/vim-dispatch/
+[submodule "vim-elixir"]
+	path = vim-elixir
+	url = ./bundle/vim-elixir/
+[submodule "vim-fugitive"]
+	path = vim-fugitive
+	url = ./bundle/vim-fugitive/
+[submodule "vim-gitgutter"]
+	path = vim-gitgutter
+	url = ./bundle/vim-gitgutter/
+[submodule "vim-markdown"]
+	path = vim-markdown
+	url = ./bundle/vim-markdown/
+[submodule "vim-misc"]
+	path = vim-misc
+	url = ./bundle/vim-misc/
+[submodule "vim-rails"]
+	path = vim-rails
+	url = ./bundle/vim-rails/
+[submodule "vim-session"]
+	path = vim-session
+	url = ./bundle/vim-session/
+[submodule "vim-slim"]
+	path = vim-slim
+	url = ./bundle/vim-slim/
+[submodule "vimproc.vim"]
+	path = vimproc.vim
+	url = ./bundle/vimproc.vim/
+[submodule "vimux"]
+	path = vimux
+	url = ./bundle/vimux/
+[submodule "bundle/vim-open-alternate"]
+	path = bundle/vim-open-alternate
+	url = https://github.com/cyphactor/vim-open-alternate
