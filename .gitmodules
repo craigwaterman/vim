@@ -1,6 +1,3 @@
-[submodule "Vundle.vim"]
-	path = Vundle.vim
-	url = ./bundle/Vundle.vim/
 [submodule "bufexplorer"]
 	path = bufexplorer
 	url = ./bundle/bufexplorer/
