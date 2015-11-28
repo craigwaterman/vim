@@ -2,14 +2,11 @@
 " possible, as it has side effects.
 filetype off
 let mapleader = " "
-
 execute pathogen#infect()
-
 
 set nocompatible
 set timeoutlen=300
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-set shell=/bin/bash\ -i
 set splitbelow
 set splitright
 set statusline+=%#warningmsg#
@@ -21,7 +18,6 @@ set ssop-=folds      " do not store folds
 " Numbers
 set number
 set numberwidth=5
-set shellcmdflag=-ic
 set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
 set nowritebackup
@@ -102,8 +98,10 @@ map <leader><Left> <C-W><C-H>
 nnoremap <leader>wt <C-W>T
 map <leader>ww :bd<cr>
 
-
-color Molokai
+let &t_8f="\e[38;2;%ld;%ld;%ldm"
+let &t_8b="\e[48;2;%ld;%ld;%ldm"
+set guicolors
+color molokai
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
