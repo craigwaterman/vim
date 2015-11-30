@@ -4,6 +4,9 @@ filetype off
 let mapleader = " "
 execute pathogen#infect()
 
+" :q is now :close (:quit will still exit vim)
+cabbrev q <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'close' : 'q')<CR>
+
 set nocompatible
 set timeoutlen=300
 set runtimepath^=~/.vim/bundle/ctrlp.vim
