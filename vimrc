@@ -12,12 +12,7 @@ set timeoutlen=300
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set splitbelow
 set splitright
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-" session options
-set ssop-=options    " do not store global and local values in a session
-set ssop-=folds      " do not store folds
+
 " Numbers
 set number
 set numberwidth=5
@@ -44,13 +39,7 @@ set list listchars=tab:»·,trail:·
 let g:session_autoload = 'no'
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "light"
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:session_lock_enabled = 0
-let g:session_autosave = "yes"
-let g:session_autosave_periodic = 2
+
 let g:bufExplorerReverseSort=1       " Sort in reverse order.
 let g:buffergator_viewport_split_policy = 'R'
 let g:ctrlp_funky_syntax_highlight = 1
@@ -103,8 +92,12 @@ map <leader>ww :bd<cr>
 
 let &t_8f="\e[38;2;%ld;%ld;%ldm"
 let &t_8b="\e[48;2;%ld;%ld;%ldm"
-set guicolors
+if !has('nvim')
+  set guicolors
+endif
 color molokai
+
+autocmd! BufWritePost * Neomake
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -134,6 +127,7 @@ augroup vimrcEx
   autocmd BufRead,BufNewFile Appraisals set filetype=ruby
   autocmd BufRead,BufNewFile Guardfile set filetype=ruby
   autocmd BufRead,BufNewFile *.js.slim set filetype=javascript
+  autocmd BufRead,BufNewFile *.js.erb set filetype=javascript
   autocmd BufRead,BufNewFile *.slimbars set filetype=slim
   autocmd BufRead,BufNewFile *.md set filetype=markdown
 
