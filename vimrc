@@ -36,6 +36,7 @@ set expandtab
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 
+let g:session_autosave = 'no'
 let g:session_autoload = 'no'
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "light"
