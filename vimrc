@@ -35,11 +35,18 @@ set shiftround
 set expandtab
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
+" Sessions
+set ssop-=options
+set ssop-=folds
 
 let g:session_autosave = 'no'
 let g:session_autoload = 'no'
+let g:session_lock_enabled = 0
+let g:session_autosave = "yes"
+let g:session_autosave_periodic = 2
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "light"
+let g:gitgutter_max_signs=9000
 
 let g:bufExplorerReverseSort=1       " Sort in reverse order.
 let g:buffergator_viewport_split_policy = 'R'
@@ -57,8 +64,12 @@ let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+" daily log
+map <leader>dl :e ~/Dropbox/daily/daily.md<cr>
+
 map <leader>t :call VimuxRunCommand("mix test")<cr>
 map <leader>et :call VimuxRunCommand("elixir *_test.exs")<cr>
+" QQ buffers!
 map <leader>qq :bufdo :bd<CR>
 map <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>s :TagbarToggle<Cr>
