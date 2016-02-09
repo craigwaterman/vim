@@ -259,7 +259,7 @@ if &t_Co > 255
        hi PreProc         ctermfg=154
        hi Repeat          ctermfg=197               cterm=bold
 
-       hi Statement       ctermfg=197               cterm=bold
+       hi Statement       ctermfg=197               cterm=boltd
        hi Tag             ctermfg=197
        hi Title           ctermfg=203
        hi Visual                      ctermbg=238

@@ -47,6 +47,7 @@ let g:session_autosave_periodic = 2
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "light"
 let g:gitgutter_max_signs=9000
+let g:indentLine_color_gui = '#222222'
 
 let g:bufExplorerReverseSort=1       " Sort in reverse order.
 let g:buffergator_viewport_split_policy = 'R'
@@ -189,23 +190,23 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
-command! -complete=shellcmd -nargs=+ Shell call s:RunShellCommand(<q-args>)
-function! s:RunShellCommand(cmdline)
-  echo a:cmdline
-  let expanded_cmdline = a:cmdline
-  for part in split(a:cmdline, ' ')
-     if part[0] =~ '\v[%#<]'
-        let expanded_part = fnameescape(expand(part))
-        let expanded_cmdline = substitute(expanded_cmdline, part, expanded_part, '')
-     endif
-  endfor
-  botright new
-  setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap
-  call setline(1, 'You entered:    ' . a:cmdline)
-  call setline(2, 'Expanded Form:  ' .expanded_cmdline)
-  call setline(3,substitute(getline(2),'.','=','g'))
-  execute '$read !'. expanded_cmdline
-  setlocal nomodifiable
-  1
-endfunction
+"command! -complete=shellcmd -nargs=+ Shell call s:RunShellCommand(<q-args>)
+"function! s:RunShellCommand(cmdline)
+  "echo a:cmdline
+  "let expanded_cmdline = a:cmdline
+  "for part in split(a:cmdline, ' ')
+     "if part[0] =~ '\v[%#<]'
+        "let expanded_part = fnameescape(expand(part))
+        "let expanded_cmdline = substitute(expanded_cmdline, part, expanded_part, '')
+     "endif
+  "endfor
+  "botright new
+  "setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap
+  "call setline(1, 'You entered:    ' . a:cmdline)
+  "call setline(2, 'Expanded Form:  ' .expanded_cmdline)
+  "call setline(3,substitute(getline(2),'.','=','g'))
+  "execute '$read !'. expanded_cmdline
+  "setlocal nomodifiable
+  "1
+"endfunction
 
