@@ -64,6 +64,7 @@ let g:auto_save_in_insert_mode = 0
 let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:tagbar_left=1
 
 " daily log
 map <leader>dl :e ~/Dropbox/daily/daily.md<cr>

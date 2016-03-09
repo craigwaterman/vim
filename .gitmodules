@@ -82,3 +82,12 @@
 [submodule "bundle/neomake"]
 	path = bundle/neomake
 	url = https://github.com/benekastah/neomake
+[submodule "bundle/xolox-colorscheme"]
+	path = bundle/xolox-colorscheme
+	url = https://github.com/xolox/vim-colorscheme-switcher
+[submodule "tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar
